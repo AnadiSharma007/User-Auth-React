@@ -1,0 +1,92 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.form-container{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+form{
+    max-width: 100%;
+    text-align: center;
+    margin: 2em auto;
+    padding: 2em 4em;
+}
+
+
+#email,
+#password
+{
+	width: 100%;
+	margin: 1.25em auto;
+	border: none;
+	border: 1px solid black;
+    border-radius: 4px;
+    padding: 1em 1em;
+}
+
+
+#email:focus,
+#password:focus
+{
+	outline: none;
+}
+
+label {
+	display: inline-block;
+    font-weight: bold;
+	margin: 0.5em 0em;
+	margin-right: 0.5em;
+}
+
+.success-message{
+    background-color: rgb(57, 156, 196);
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.error_message{
+    color: red;
+}
+
+.redirect{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(57, 156, 196);
+}
+
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2em;
+}
+
+form input{
+    margin: 1em auto;
+}
+
+.button{
+    margin-top: 2em;
+	margin-bottom: 0em;
+	background-color: white;
+    cursor: pointer;
+	padding: 1em 2em;
+	border: 1px solid black;
+	transition: all 0.3s ease;
+}
+
+.button:hover{
+    background-color: grey;
+    transition: ease-in-out;
+}
