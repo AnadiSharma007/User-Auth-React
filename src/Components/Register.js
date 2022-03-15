@@ -108,10 +108,10 @@ function Register() {
         <div>
           <p className='error_message'>{error}</p>
         </div>
-        <button className='button' type='submit'>Register</button>
+        <button className='button' type='submit'>Sign Up</button>
       </form>
       <div className='register'>
-       <p>already have an account?</p>
+       <p>Already have an account?</p>
         <p className="redirect" 
          onClick={() => navigate("/login")}
         >

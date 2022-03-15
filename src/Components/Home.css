@@ -1,0 +1,31 @@
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+    color: white;
+}
+
+.nav p{
+    margin-right: 2em;
+    padding: 0.4em;
+    font-weight:500;
+    background-color: gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav p:hover{
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.welcome-message{
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
