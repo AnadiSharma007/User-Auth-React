@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import axios from "axios"
 import "../../src/Components/Register.css"
-// import { useNavigate } from 'react-router-dom';
+ import { useNavigate } from 'react-router-dom';
 
 function Register() {
 
@@ -17,7 +17,7 @@ function Register() {
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleName = e => {
 
@@ -75,7 +75,7 @@ function Register() {
         console.log(result);
         setSubmitted(true);
         setError("");
-        // navigate('/')
+        navigate('/home')
         }
         catch(err){
           setError("Something went wrong try again");
@@ -110,6 +110,14 @@ function Register() {
         </div>
         <button className='button' type='submit'>Register</button>
       </form>
+      <div className='register'>
+       <p>already have an account?</p>
+        <p className="redirect" 
+         onClick={() => navigate("/login")}
+        >
+        Log In
+        </p>
+        </div>
     </div>
     </div>
   )

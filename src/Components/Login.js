@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, {useState} from 'react'
 import "./Login.css"
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
 
@@ -14,6 +15,7 @@ function Login() {
     const [error, setError] = useState('');
     const [submitted, setSubmitted] = useState(false);
 
+    const navigate = useNavigate();
 
     const handleEmail = (e) => {setState({...state, email: e.target.value})}
     const handlePassword = (e) => {setState({...state, password: e.target.value})}
@@ -35,6 +37,7 @@ function Login() {
                 console.log(result);
                 setSubmitted(true);
                 setError("");
+                navigate("/home");
             }
             catch(err){
                 setError("Email or Password is Incorrect")
@@ -63,7 +66,7 @@ function Login() {
         <div className='register'>
        <p>Don't have an account?</p>
         <p className="redirect" 
-        // onClick={() => navigate("/signup")}
+         onClick={() => navigate("/register")}
         >
         Sign Up
         </p>
