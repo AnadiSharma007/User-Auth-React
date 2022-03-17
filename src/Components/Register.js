@@ -75,7 +75,7 @@ function Register() {
         console.log(result);
         setSubmitted(true);
         setError("");
-        navigate('/home')
+        navigate('/')
         }
         catch(err){
           setError("Something went wrong try again");
