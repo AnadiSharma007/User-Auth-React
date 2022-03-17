@@ -17,7 +17,7 @@ function App() {
       <header className="App-header">
         
         <Routes>
-          <Route  path="/home" element={loggedIn ? (<Home setLoggedIn={setLoggedIn} actualEmail={actualEmail} />) : (<Navigate to='/login' />) } />
+          <Route  path="/" element={loggedIn ? (<Home setLoggedIn={setLoggedIn} actualEmail={actualEmail} />) : (<Navigate to='/login' />) } />
           <Route  path="/login" element={<Login  setActualEmail={setActualEmail} setLoggedIn={setLoggedIn}/>} />
           <Route  path="/register" element={<Register />} />
         </Routes>

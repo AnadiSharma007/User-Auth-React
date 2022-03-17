@@ -39,7 +39,7 @@ function Login({setLoggedIn, setActualEmail}) {
                 setLoggedIn(true);
                 setActualEmail(state.email);
                 setError("");
-                navigate("/home");
+                navigate("/");
             }
             catch(err){
                 setError("Email or Password is Incorrect")
