@@ -2,24 +2,28 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 2em;
-    color: black;
+    margin-top: 2em;
+    color: white;
 }
 
-.nav p{
-    margin-right: 2em;
+.nav button{
+    position: fixed;
     padding: 0.4em;
     font-weight:500;
-    background-color: white;
+    font-size: large;
+    background-color: black;
+    color: white;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: .5px .5px 5px 0px rgba(0,0,0,0.75);
 }
 
-.nav p:hover{
+.nav button:hover{
     background-color: grey;
     transition: ease-in-out;
-    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: .5px .5px 5px 0px rgba(0,0,0,0.75);
 }
 
 

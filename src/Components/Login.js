@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import "./Login.css"
 import { useNavigate } from 'react-router-dom';
 
-function Login() {
+function Login({setLoggedIn, setActualEmail}) {
 
     const api = `https://user-auth-apii.herokuapp.com/api/v1/login`
 
@@ -36,6 +36,8 @@ function Login() {
                 })
                 console.log(result);
                 setSubmitted(true);
+                setLoggedIn(true);
+                setActualEmail(state.email);
                 setError("");
                 navigate("/home");
             }

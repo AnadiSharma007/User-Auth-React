@@ -2,18 +2,22 @@ import React from 'react'
 import './Home.css'
 import { useNavigate } from 'react-router-dom'
 
-function Home() {
+function Home({setLoggedIn, actualEmail}) {
 
   const navigate = useNavigate();
+  
+  const handleLogOut = (e) => {
+    setLoggedIn(false);
+    navigate('/login')
+  }
 
   return (
     <div>
       <div className='nav'>
-        <p onClick={() => navigate('/login')}>Log In</p>
-        <p onClick={() => navigate('/register')}>Sign Up</p>
+        <button onClick={handleLogOut}>Logout</button>
       </div>
       <div className='welcome-message'>
-        <h1>Welcome To Home Screen</h1>
+        <h1>Welcome To Home Screen {actualEmail}</h1>
       </div>
     </div>
   )
